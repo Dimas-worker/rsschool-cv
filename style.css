@@ -115,6 +115,8 @@ li {
 }
 
 .icon-github {
+    width: 51px;
+    height: 51px;
     position: relative;
     transition: 0.5s linear;
 }
