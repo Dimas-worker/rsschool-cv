@@ -1,95 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cv</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <h1>Dmitry Petralai</h1>
-                <h3>Work hard to get what you like, otherwise you'll be forced to just like what you get.</h3>
-            </header>
-            <main class="content">
-                <div class="layout-2-column">
-                    <div class="left">
-                        <img src="images/myfoto.png" class="myfoto" alt="myfoto">
-                        <div class="contacts">
-                            <h2>PERSONAL DETAILS</h2>
-                            <ul class="contacts__link">
-                                <li>link-discord: @Dimas-worker</li>
-                                <li>phone: 80297914325</li>
-                                <li><a href="#">pdo.hardwork@yandex.ru</a></li>
-                                <li>address: Zaslavskay str, Minsk</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h2>SKILL</h2>
-                            <ul>
-                                <li>Basic Git</li>
-                                <li>Basic HTML</li>
-                                <li>Basic CSS</li>
-                                <li>Basic JS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="education">
-                            <h2>EDUCATION</h2>
-                            <p>2007 - 2012 Industrial automation engineer - Belarusian State Technological University</p>
-                        </div>
-                        <div class="about-me">
-                            <h2>ABOUT ME</h2>
-                            <p>In the future I will changed my job on a front-end developer. I am motivated and determined.</p>
-                        </div>
-                        <div class="experience">
-                            <h2>EXPERIENCE</h2>
-                            <ul>
-                                <li>2012 JSC Naftan - engineer KIP</li>
-                                <li>2015 LLC NPP Tek Know Bel - engineer KIP</li>
-                            </ul>
-                        </div>
-                        <div class="career">
-                            <h2>CAREER OBJECTIVE</h2>
-                            <p>Front-end developer</p>
-                        </div>
-                        <div class="sample-code">
-                            <h2>SAMPLE CODE</h2>
-                            <pre><code>function reverse (n) {
-    let str = n + '';
-    if (str[0] === '-') {
-        str = str.slice(1)}
-    let result = '';
-    for (let i = 0; i &LT; str.length; i++) {
-        result = str[i] + result}
-    return result
-}
-                                </code>
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer class="footer">
-                <div class="footer__icon">
-                    <div>
-                        <a href="https://github.com/Dimas-worker">
-                            <img src="images/Github.png" class="icon-github" alt="github-icon">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://rs.school/js/">
-                            <span class="icon-rss"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="creation">4 March 2021
-                </div>
-            </footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main">
+      <div class="layout-2-column">
+        <section class="side-left">
+          <img src="images/myfoto.png" class="my-photo" alt="my-photo">
+          <div class="contacts">
+              <h2>Personal details</h2>
+              <ul class="contacts__link">
+                  <li><span class="icon discord"></span>link-discord: Dmitry#3565</li>
+                  <li><span class="icon phone"></span>phone: 8029791****</li>
+                  <li><span class="icon email"></span>email:&nbsp;<a class="my-email" href="https://mail.yandex.by/">pdo.hardwork@yandex.ru</a></li>
+                  <li><span class="icon address"></span>address: Minsk</li>
+              </ul>
+          </div>
+          <div>
+              <h2>Skill</h2>
+              <ul class="skill">
+                  <li><progress class="graph" value="1" max="4"></progress>Basic Git</li>
+                  <li><progress class="graph" value="1" max="4"></progress>Basic HTML</li>
+                  <li><progress class="graph" value="1" max="4"></progress>Basic CSS</li>
+                  <li><progress class="graph" value="1" max="4"></progress>Basic JS</li>
+              </ul>
+          </div>
+          <div>
+            <h2>Language</h2>
+            <ul class="language">
+                <li><progress class="graph" value="1" max="10"></progress>Beginner</li>
+            </ul>
         </div>
-    </body>
+        </section>
+        <section class="side-right">
+          <h1>Dmitry<br><mark class="name">Petralai</mark></h1>
+          <hr>
+          <h5>Work hard to get what you like, otherwise you'll be forced to just like what you get.</h5>
+          <div class="education">
+            <h2>Education</h2>
+            <p>2007 - 2012 Industrial automation engineer - Belarusian State Technological University</p>
+        </div>
+        <div class="about-me">
+            <h2>About me</h2>
+            <p>I have a reason to change my life. So i started to learn JS and at the same time signed up on the course RSS. This is my first experience in programming and it is what i want to do. Because I like to set goals and complete them. Right now my goal is finished course RSS</p>
+        </div>
+        <div>
+            <h2>Experience</h2>
+            <ul class="experience">
+                <li>2012 JSC Naftan - engineer KIP</li>
+                <li>2015 LLC NPP Tek Know Bel - engineer KIP</li>
+            </ul>
+        </div>
+        <div class="career">
+            <h2>Career objective</h2>
+            <p>Front-end developer</p>
+        </div>
+        <div class="sample-code">
+            <h2>Sample code</h2>
+            <pre class="sample-code">function factorial(n) { 
+ return n ? n * factorial(n - 1) : 1}</pre>
+            <a class="more" href="https://github.com/Dimas-worker/">Learn more</a>
+        </div>
+        </section>
+      </div> 
+      <footer class="footer">
+        <div class="footer__icon">
+          <div>
+            <a href="https://github.com/Dimas-worker">
+              <img src="images/Github.png" class="icon-github" alt="github-icon">
+            </a>
+          </div>
+          <div>
+            <a href="https://rs.school/js/">
+              <span class="icon-rss"></span>
+            </a>
+          </div>
+        </div>
+        <div class="creation-date">
+          <time datetime="2021-07-15">July 2021</time>
+        </div>
+      </footer> 
+    </main>
+  </body>
 </html>
