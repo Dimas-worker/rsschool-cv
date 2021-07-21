@@ -1,23 +1,15 @@
 ## PERSONAL DETAILS
 * Name: **Dmitry Petralai**
-* email: [pdo.hardwork@yandex.ru](pdo.hardwork@yandex.ru)
-* address: Zaslavskay str, Minsk
-* phone: 80297914325
-* link-discord: @Dimas-worker
+* email: [pdo.hardwork@yandex.ru](https://mail.yandex.by/)
+* address: Minsk
+* phone: 8029791*****
+* link-discord: Dmitriy#3565
 ## CAREER OBJECTIVE
 Front-end developer
 ## SAMPLE CODE
 ```
-function reverse (n) {
-    let str = n + '';
-    if (str[0] === '-') {
-        str = str.slice(1);
-    }
-    let result = '';
-    for (let i=0; i<str.length; i++) {
-        result = str[i] + result;
-    }
-    return result;
+function factorial(n) {
+  return n ? n * factorial(n - 1) : 1;
 }
 ```
 ## ABOUT ME
