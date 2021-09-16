@@ -31,10 +31,16 @@ h2 {
     padding-left: 20px;
 }
 h3 {
-  font-style: normal;
+    font-style: normal;
     font-weight: normal;
     font-size: 32px;
     padding-left: 200px;
+}
+h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 10px;
 }
 h5 {
     font-style: normal;
@@ -164,6 +170,9 @@ mark {
   margin-top: 65px;
   border-radius: 5px;
 }
+.welcome__content figure{
+  height: 430px;
+}
 .my__photo {
   width: 320px;
   height: 430px;
@@ -238,6 +247,20 @@ progress {
     height: 20px;
     padding: 5px;
     margin-right: 10px;
+}
+/* about */
+.about-me__content {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.about-me__content iframe{
+  padding-right: 20px;
+  width: 280px;
+  height: 140px;
+}
+.about-me__content p{
+  padding-right: 20px;
 }
 /* education__list */
 .certificate_link {
@@ -360,6 +383,9 @@ progress {
   }
   .welcome {
     padding-top: 0;
+  }
+  .about-me__content {
+    flex-direction: column;
   }
 }
 @media (max-width: 530px) {
