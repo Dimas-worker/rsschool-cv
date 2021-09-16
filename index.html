@@ -1,80 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cv</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="./images/icon/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="title"><a href="#welcome">Welcome</a></li>
+            <li class="title"><a href="#contacts">Contacts</a></li>
+            <li class="title"><a href="#skills">Skills</a></li>
+            <li class="title"><a href="#education">Education</a></li>
+            <li class="title"><a href="#about-me">About me</a></li>
+            <li class="title"><a href="#experiences">Experience</a></li>
+            <li class="title"><a href="#sample-code">Sample code</a></li>
+            <li class="title"><a href="#my_project">My Project</a></li>
+            <li class="title"><a href="#languages">Languages</a></li>
+          </ul>
+        </nav>
+        <div class="burger__menu">
+          <div class="burger"><span class="burger__icon"></span></div>
+          <div class="menu__content">
+            <ul class="nav__menu">
+              <li class="menu__list"><a href="#welcome">Welcome</a></li>
+              <li class="menu__list"><a href="#contacts">Contacts</a></li>
+              <li class="menu__list"><a href="#skills">Skills</a></li>
+              <li class="menu__list"><a href="#education">Education</a></li>
+              <li class="menu__list"><a href="#about-me">About me</a></li>
+              <li class="menu__list"><a href="#experiences">Experience</a></li>
+              <li class="menu__list"><a href="#sample-code">Sample code</a></li>
+              <li class="menu__list"><a href="#my_project">My Project</a></li>
+              <li class="menu__list"><a href="#languages">Languages</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="main">
-      <div class="layout-2-column">
-        <section class="side-left">
-          <img src="images/myfoto.png" class="my-photo" alt="my-photo">
-          <div class="contacts">
-              <h2>Personal details</h2>
-              <ul class="contacts__link">
-                  <li><span class="icon discord"></span>link-discord: Dmitry#3565</li>
-                  <li><span class="icon phone"></span>phone: 8029791****</li>
-                  <li><span class="icon email"></span>email:&nbsp;<a class="my-email" href="https://mail.yandex.by/">pdo.hardwork@yandex.ru</a></li>
-                  <li><span class="icon address"></span>address: Minsk</li>
-              </ul>
+      <div class="wrapper">
+        <section class="welcome" id="welcome">
+          <div class="welcome__content">
+            <img class="my__photo" src="images/myFoto.png" alt="my-photo" />
+            <div class="welcome__text">
+              <div class="welcome__title">
+                <h1>Dzmitry<br /><mark class="name">Petralai</mark></h1>
+                <h3>Front-end Developer</h3>
+              </div>
+              <div class="quote">
+                <blockquote>
+                  <p class="blockquote">
+                    "Work hard to get what you like, otherwise you'll be forced
+                    to just like what you get".<br />
+                    George Bernard Shaw
+                  </p>
+                </blockquote>
+              </div>
+            </div>
           </div>
-          <div>
-              <h2>Skill</h2>
-              <ul class="skill">
-                  <li><progress class="graph" value="1" max="4"></progress>Basic Git</li>
-                  <li><progress class="graph" value="1" max="4"></progress>Basic HTML</li>
-                  <li><progress class="graph" value="1" max="4"></progress>Basic CSS</li>
-                  <li><progress class="graph" value="1" max="4"></progress>Basic JS</li>
-              </ul>
+        </section>
+        <section class="contacts" id="contacts">
+          <h2>Personal details</h2>
+          <ul class="contacts__link">
+            <li><span class="icon discord"></span>link-discord: Dmitry#3565</li>
+            <li><span class="icon phone"></span>phone: 8029791****</li>
+            <li>
+              <span class="icon email"></span>email:&nbsp;<a
+                class="my-email"
+                href="https://mail.yandex.by/"
+                >pdo.hardwork@yandex.ru</a
+              >
+            </li>
+            <li><span class="icon address"></span>address: Minsk</li>
+          </ul>
+        </section>
+        <section class="skills" id="skills">
+          <h2>Skill</h2>
+          <ul class="skill">
+            <li><progress class="graph" value="1" max="4"></progress>Git</li>
+            <li>
+              <progress class="graph" value="1" max="4"></progress>HTML (BEM)
+            </li>
+            <li>
+              <progress class="graph" value="1" max="4"></progress>CSS (SASS)
+            </li>
+            <li><progress class="graph" value="1" max="4"></progress>JS</li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2>Education</h2>
+          <div class="education__list">
+            <p>
+              <b>2012 </b>- Industrial automation engineer - Belarusian State
+              Technological University
+            </p>
+            <p>
+              <b>2021 </b>- The Complete PreSchool RSS
+              <span class="certificate_link">Certificate</span>
+            </p>
           </div>
-          <div>
-            <h2>Language</h2>
-            <ul class="language">
-                <li><progress class="graph" value="1" max="10"></progress>Beginner</li>
-            </ul>
-        </div>
         </section>
-        <section class="side-right">
-          <h1>Dmitry<br><mark class="name">Petralai</mark></h1>
-          <hr>
-          <h5>Work hard to get what you like, otherwise you'll be forced to just like what you get.</h5>
-          <div class="education">
-            <h2>Education</h2>
-            <p>2007 - 2012 Industrial automation engineer - Belarusian State Technological University</p>
-        </div>
-        <div class="about-me">
-            <h2>About me</h2>
-            <p>I have a reason to change my life. So i started to learn JS and at the same time signed up on the course RSS. This is my first experience in programming and it is what i want to do. Because I like to set goals and complete them. Right now my goal is finished course RSS</p>
-        </div>
-        <div>
-            <h2>Experience</h2>
-            <ul class="experience">
-                <li>2012 JSC Naftan - engineer KIP</li>
-                <li>2015 LLC NPP Tek Know Bel - engineer KIP</li>
-            </ul>
-        </div>
-        <div class="career">
-            <h2>Career objective</h2>
-            <p>Front-end developer</p>
-        </div>
-        <div class="sample-code">
-            <h2>Sample code</h2>
-            <pre class="sample-code">function factorial(n) { 
- return n ? n * factorial(n - 1) : 1}</pre>
-            <a class="more" href="https://github.com/Dimas-worker/">Learn more</a>
-        </div>
+        <section class="about-me" id="about-me">
+          <h2>About me</h2>
+          <div class="about-me__content">
+            <p>
+              I have a reason to change my life. So i started to learn JS and at
+              the same time signed up on the course RSS. This is my first
+              experience in programming and it is what i want to do. Because I
+              like to set goals and complete them. Right now my goal is finished
+              course RSS
+            </p>
+          </div>
         </section>
-      </div> 
-      <footer class="footer">
+        <section class="experiences" id="experiences">
+          <h2>Experience</h2>
+          <ul class="experience">
+            <li><b>2012 </b>- JSC Naftan - engineer KIP</li>
+            <li><b>2015 </b>- LLC NPP Tek Know Bel - engineer KIP</li>
+          </ul>
+        </section>
+        <section class="sample-code" id="sample-code">
+          <h2>Sample code</h2>
+          <pre><code>
+function factorial(n) { 
+  return n ? n * factorial(n - 1) : 1}</code></pre>
+        </section>
+        <section class="my_project" id="my_project">
+          <h2>My project</h2>
+          <div class="project__container">
+            <div class="project_zoo">
+              <div class="description">
+                <p>
+                  <b> Project Online Zoo </b>
+                </p>
+                <p>Use HTML, CSS (SASS), JS</p>
+                <p>
+                  <em>
+                    The project includes the creation of a four-page responsive
+                    layout.
+                  </em>
+                </p>
+              </div>
+              <img
+                src="./images/project_zoo.png"
+                alt="zoo"
+                class="project__content"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="languages" id="languages">
+          <h2>Language</h2>
+          <ul class="language">
+            <li>
+              <progress class="graph" value="2" max="10"></progress
+              >Pre-Intermediate A2
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
         <div class="footer__icon">
           <div>
             <a href="https://github.com/Dimas-worker">
-              <img src="images/Github.png" class="icon-github" alt="github-icon">
+              <img
+                src="images/icon/github_icon.png"
+                class="icon-github"
+                alt="github-icon"
+              />
             </a>
           </div>
           <div>
@@ -86,7 +203,8 @@
         <div class="creation-date">
           <time datetime="2021-07-15">July 2021</time>
         </div>
-      </footer> 
-    </main>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
