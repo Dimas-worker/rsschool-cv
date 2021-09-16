@@ -297,11 +297,11 @@ progress {
     align-items: center;
 }
 .icon-rss {
-    background-image: url('https://rs.school/images/rs_school_js.svg');
+    background-image: url('./images/icon/rs_school_js.svg');
     width: 100px;
     height: 38px;
     display: inline-block;
-    background-size: 100% 100%;
+    background-size: 100%;
     transition: 0.5s linear;
     position: relative;
 }
