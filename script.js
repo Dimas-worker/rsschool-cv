@@ -1,12 +1,16 @@
 const burgerMenu = document.querySelector(".burger__icon");
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".menu__content");
+const menuList = document.querySelectorAll(".menu__list");
 
-burger.addEventListener("click", () => {
+function switchBurger() {
   burgerMenu.classList.toggle("burger__icon_active");
   navMenu.classList.toggle("menu__content_active");
+}
+burger.addEventListener("click", switchBurger);
+menuList.forEach((el) => {
+  el.addEventListener("click", switchBurger);
 });
-
 const link = document.querySelector(".project_zoo");
 link.addEventListener("click", () => {
   window.open(

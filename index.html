@@ -63,7 +63,9 @@
       <div class="wrapper">
         <section class="welcome" id="welcome">
           <div class="welcome__content">
-            <img class="my__photo" src="./images/myfoto.png" alt="my-photo" />
+            <figure>
+              <img class="my__photo" src="./images/myfoto.png" alt="my-photo" />
+            </figure>
             <div class="welcome__text">
               <div class="welcome__title">
                 <h1>Dzmitry<br /><mark class="name">Petralai</mark></h1>
@@ -124,7 +126,7 @@
         </section>
         <section class="about-me" id="about-me">
           <h2>About me</h2>
-          <div class="about-me__content">
+          <article class="about-me__content">
             <p>
               I have a reason to change my life. So i started to learn JS and at
               the same time signed up on the course RSS. This is my first
@@ -132,7 +134,11 @@
               like to set goals and complete them. Right now my goal is finished
               course RSS
             </p>
-          </div>
+            <iframe
+              src="https://www.youtube.com/embed/ypJGe_BrZ0s"
+              frameborder="0"
+            ></iframe>
+          </article>
         </section>
         <section class="experiences" id="experiences">
           <h2>Experience</h2>
@@ -152,9 +158,7 @@ function factorial(n) {
           <div class="project__container">
             <div class="project_zoo">
               <div class="description">
-                <p>
-                  <b> Project Online Zoo </b>
-                </p>
+                <h4>Project Online Zoo</h4>
                 <p>Use HTML, CSS (SASS), JS</p>
                 <p>
                   <em>
