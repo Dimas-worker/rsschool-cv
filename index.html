@@ -18,7 +18,7 @@
     />
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css"
     />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script>
@@ -63,7 +63,7 @@
       <div class="wrapper">
         <section class="welcome" id="welcome">
           <div class="welcome__content">
-            <figure>
+            <figure class="welcome__img">
               <img class="my__photo" src="./images/myfoto.png" alt="my-photo" />
             </figure>
             <div class="welcome__text">
@@ -86,66 +86,109 @@
         <section class="contacts" id="contacts">
           <h2>Personal details</h2>
           <ul class="contacts__link">
-            <li><span class="icon discord"></span>link-discord: Dmitry#3565</li>
-            <li><span class="icon phone"></span>phone: 8029791****</li>
             <li>
-              <span class="icon email"></span>email:&nbsp;<a
-                class="my-email"
-                href="https://mail.yandex.by/"
+              <span class="icon__bg"><span class="icon discord"></span></span
+              >link-discord: Dmitry#3565
+            </li>
+            <li>
+              <span class="icon__bg"><span class="icon phone"></span></span
+              >phone: 8029791****
+            </li>
+            <li>
+              <span class="icon__bg"><span class="icon email"></span></span>
+              email:&nbsp;<a class="my-email" href="https://mail.yandex.by/"
                 >pdo.hardwork@yandex.ru</a
               >
             </li>
-            <li><span class="icon address"></span>address: Minsk</li>
+            <li>
+              <span class="icon__bg"><span class="icon address"></span></span
+              >address: Minsk
+            </li>
           </ul>
         </section>
         <section class="skills" id="skills">
           <h2>Skill</h2>
           <ul class="skill">
-            <li><progress class="graph" value="1" max="4"></progress>Git</li>
             <li>
-              <progress class="graph" value="1" max="4"></progress>HTML (BEM)
+              <progress class="graph" value="1" max="3"></progress
+              ><span class="skill_name">Git</span>
             </li>
             <li>
-              <progress class="graph" value="1" max="4"></progress>CSS (SASS)
+              <progress class="graph" value="1" max="3"></progress
+              ><span class="skill_name">HTML (BEM)</span>
             </li>
-            <li><progress class="graph" value="1" max="4"></progress>JS</li>
+            <li>
+              <progress class="graph" value="1" max="3"></progress
+              ><span class="skill_name">CSS (SASS)</span>
+            </li>
+            <li>
+              <progress class="graph" value="1" max="3"></progress
+              ><span class="skill_name">JS</span>
+            </li>
           </ul>
         </section>
         <section class="education" id="education">
           <h2>Education</h2>
           <div class="education__list">
-            <p>
-              <b>2012 </b>- Industrial automation engineer - Belarusian State
-              Technological University
-            </p>
-            <p>
-              <b>2021 </b>- The Complete PreSchool RSS
-              <span class="certificate_link">Certificate</span>
-            </p>
+            <div class="education__content">
+              <div class="year">2021</div>
+              <div class="status">In progress</div>
+              <div class="speciality">JS/FE Pre-School</div>
+              <div class="school">Rolling Scopes School</div>
+            </div>
+            <div class="education__content">
+              <div class="year">2021</div>
+              <div class="status">
+                <span class="certificate_link">Certificate</span>
+              </div>
+              <div class="speciality">JS/FE Pre-School</div>
+              <div class="school">Rolling Scopes School</div>
+            </div>
+            <div class="education__content">
+              <div class="year">2007 - 2012</div>
+              <div class="status">1st Cycle Degree/Bachelor</div>
+              <div class="speciality">Industrial automation engineer</div>
+              <div class="school">
+                Belarusian State Technological University
+              </div>
+            </div>
           </div>
         </section>
         <section class="about-me" id="about-me">
           <h2>About me</h2>
-          <article class="about-me__content">
-            <p>
-              I have a reason to change my life. So i started to learn JS and at
-              the same time signed up on the course RSS. This is my first
-              experience in programming and it is what i want to do. Because I
-              like to set goals and complete them. Right now my goal is finished
-              course RSS
-            </p>
+          <div class="about-me__content">
+            <article class="about-me__container">
+              <h6>About me</h6>
+              <p class="about-me__text">
+                I have a purpose to change my life. So i started to learn JS and
+                at the same time signed up on the course RSS. This is my first
+                experience in programming and it is what i want to do.
+              </p>
+              <div class="about-me__hobby">
+                Hobbies:<span class="hobby__snow"></span
+                ><span class="hobby__summer"></span>
+              </div>
+            </article>
             <iframe
+              class="iframe__about"
               src="https://www.youtube.com/embed/ypJGe_BrZ0s"
-              frameborder="0"
             ></iframe>
-          </article>
+          </div>
         </section>
         <section class="experiences" id="experiences">
           <h2>Experience</h2>
-          <ul class="experience">
-            <li><b>2012 </b>- JSC Naftan - engineer KIP</li>
-            <li><b>2015 </b>- LLC NPP Tek Know Bel - engineer KIP</li>
-          </ul>
+          <div class="experiences__container">
+            <div class="experiences__content">
+              <div class="year">2015 - now</div>
+              <div class="speciality">engineer KIP</div>
+              <div class="school">LLC NPP Tek Know Bel</div>
+            </div>
+            <div class="experiences__content">
+              <div class="year">2012 - 2015</div>
+              <div class="speciality">engineer KIP</div>
+              <div class="school">JSC Naftan</div>
+            </div>
+          </div>
         </section>
         <section class="sample-code" id="sample-code">
           <h2>Sample code</h2>
@@ -170,6 +213,23 @@ function factorial(n) {
               <img
                 src="./images/project_zoo.png"
                 alt="zoo"
+                class="project__content"
+              />
+            </div>
+            <div class="project_slider">
+              <div class="description">
+                <h4>Project Vertical-slider</h4>
+                <p>Use HTML, CSS, JS</p>
+                <p>
+                  <em>
+                    The project includes the creation of a slider, switches by
+                    button, swipe
+                  </em>
+                </p>
+              </div>
+              <img
+                src="./images/project_slider.png"
+                alt="slider"
                 class="project__content"
               />
             </div>
